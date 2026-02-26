@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    background-color: #f4f4f9;
+    
+    /* This centers everything on the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 320px; /* Makes it look good on phones and computers */
+    text-align: center;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    text-align: right; /* Numbers type from right to left */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.button {
+    flex: 1; /* Makes all buttons the same size */
+    margin: 0 4px;
+    padding: 15px 0;
+    font-size: 18px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #d0d0d0; /* Gives a click effect */
+}
+
+/* Removes outer margins on the buttons to fit nicely */
+.row .button:first-child { margin-left: 0; }
+.row .button:last-child { margin-right: 0; }
