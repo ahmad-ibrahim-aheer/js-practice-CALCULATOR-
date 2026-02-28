@@ -7,7 +7,7 @@ let delBtn = document.getElementById("del");
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     let value = btn.innerText;
-    if (value !== "=") {
+    if (value !== "=" && value !== "AC" && value !== "DEL") {
       display.value += value;
     }
   });
